@@ -8,7 +8,7 @@ records = json.load(f)
 
 quotes = []
 
-@app.route('/quotes', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_quotes():
   return jsonify(records)
 
